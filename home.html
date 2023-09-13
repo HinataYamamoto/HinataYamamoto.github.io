@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Hinata Yamamoto</title>
+    <script src="https://kit.fontawesome.com/312a3c8f98.js" crossorigin="anonymous"></script>
+    <link href="/css/stylesheet.css" rel="stylesheet" />
+
+    <script>
+        fetch("/header.html")
+            .then((response) => response.text())
+            .then((data) => document.querySelector("#header").innerHTML = data);
+
+        fetch("/footer.html")
+            .then((response) => response.text())
+            .then((data) => document.querySelector("#footer").innerHTML = data);
+    </script>
+
+<style>
+    .wrapper{
+        padding-top:32px;
+    }
+
+    .welcome{
+        color:yellow;
+        font-size:3em;
+        text-align: center;
+        background-color: #2ca9e1;
+        margin-bottom:12px;
+    }
+
+    .greetings{
+        color: #e7e7eb;
+        margin-right: 16px;
+        margin-left:28px;
+    }
+
+    .greeitings-title{
+        padding-top:16px;
+        font-size:1.5em;
+        color: #89c3eb;
+        margin:0 16px;
+    }
+
+    .content-title{
+        padding-top:4px;
+        margin-top:32px;
+    }
+
+    .works{
+        margin-top:64px;
+        margin-bottom:32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap:24px;
+        flex-flow: column;
+    }
+
+    .works-link img{
+        width: 480px;
+    }
+</style>
+
+</head>
+<body>
+    <div id="header"></div>
+
+    <main>
+        <div class="wrapper">
+            <div class="welcome">Welcome to my portfolio!</div>
+            <p class="greeitings-title">Who am I?</p>
+            <p class="greetings">
+                I'm Hinata Yamamoto, a programmer making video games since 2019.
+            <br>I can use Unity, C#, Google Docs, and sometimes HLSL to make video games.
+            <br>I went to "Vantan Game Academy High School" to learn game development.
+            </p>
+
+            <p class="greeitings-title">What's my greatest strength?</p>
+            <p class="greetings">
+                I love learning new things.
+            <br>When I find something that interests me, I always search the Internet or ask about it so that I can improve my skills.
+            <br>Whenever I'm having a hard time developing a video game, this desire always helps me so much, 
+                even when I'm encountering challenges that seem impossible to learn for me!
+            </p>
+            <p class="greeitings-title">Contact</p>
+            <p class="greetings">
+                You can contact me at <a href="mailto:123789hinata@gmail.com" class="link">here</a>.
+            </p>
+
+            <h1 class="content-title">WORKS</h1>
+            <div class="works">
+                <a href="/works/bb.html" class="works-link"><img src="/images/bb.png"></a>
+                <a href="/works/up3.html" class="works-link"><img src="/images/up3.png"></a>
+                <a href="/works/do3.html" class="works-link"><img src="/images/do3.png"></a>
+                <a href="/works/robot.html" class="works-link"><img src="/images/robot.png"></a>
+                <a href="/works/bo.html" class="works-link"><img src="/images/bo.png"></a>
+                <a href="/works/l2d.html" class="works-link"><img src="/images/l2d.png"></a>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </main>
+</body>
+</html>

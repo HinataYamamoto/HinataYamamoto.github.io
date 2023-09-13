@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Breakout Game - Hinata Yamamoto</title>
+    <script src="https://kit.fontawesome.com/312a3c8f98.js" crossorigin="anonymous"></script>
+    <link href="/css/stylesheet.css" rel="stylesheet"/>
+    <link href="/css/works-content.css" rel="stylesheet"/>
+    <style>
+    </style>
+
+    <script>
+        fetch("/header.html")
+            .then((response) => response.text())
+            .then((data) => document.querySelector("#header").innerHTML = data);
+
+        fetch("/footer.html")
+            .then((response) => response.text())
+            .then((data) => document.querySelector("#footer").innerHTML = data);
+    </script>
+
+    <style>
+    </style>
+</head>
+<body>
+    <div id="header"></div>
+
+    <main>
+        <h1 class="content-title">A Breakout Game (WIP)</h1>
+        <iframe src="https://www.youtube.com/embed/sohzFyR5Eyw?si=iKIe7nBMWJ4UTsRh" title="YouTube video player" class="works-vid-player"
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <div class="details">
+            <h2 class="details-head">Description</h2>
+            <div class="details-contents">
+                <div class="details-list">
+                    <div class="details-list-left">
+                        <p class="details-list-head">Platform:</p>
+                        <p class="details-list-head">Engine:</p>
+                        <p class="details-list-head">Team Size:</p>
+                        <p class="details-list-head">Role:</p>
+                    </div>
+                    <div class="details-list-right">
+                        <p class="details-list-content">Windows</p>
+                        <p class="details-list-content">Unity</p>
+                        <p class="details-list-content">3</p>
+                        <p class="details-list-content">C# Programming, <br>Writing documentation</p>
+                    </div>
+                </div>
+                <p class="text">
+                    This game is a combination of RPG and Breakout, where players will play RPG as the exploration part, and Breakout as the combat part.
+                <br>
+                <br>This is my first project as part of a team, and it gave me a lot of challenges,
+                    such as writing documentation, event-driven programming with UniRx, and writing readable codes.
+                </p>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balling Ball - Hinata Yamamoto</title>
+    <script src="https://kit.fontawesome.com/312a3c8f98.js" crossorigin="anonymous"></script>
+    <link href="/css/stylesheet.css" rel="stylesheet"/>
+    <link href="/css/works-content.css" rel="stylesheet"/>
+    <style>
+    </style>
+
+    <script>
+        fetch("/header.html")
+            .then((response) => response.text())
+            .then((data) => document.querySelector("#header").innerHTML = data);
+
+        fetch("/footer.html")
+            .then((response) => response.text())
+            .then((data) => document.querySelector("#footer").innerHTML = data);
+    </script>
+
+    <style>
+    </style>
+</head>
+<body>
+    <div id="header"></div>
+
+    <main>
+        <h1 class="content-title">Balling Ball (2019)</h1>
+        <iframe src="https://www.youtube.com/embed/TnVYJXEv0o4?si=evCClPZMml_WDH13" title="YouTube video player" class="works-vid-player"
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <div class="details">
+            <h2 class="details-head">Description</h2>
+            <div class="details-contents">
+                <div class="details-list">
+                    <div class="details-list-left">
+                        <p class="details-list-head">Completion:</p>
+                        <p class="details-list-head">Platform:</p>
+                        <p class="details-list-head">Engine:</p>
+                        <p class="details-list-head">Team Size:</p>
+                        <p class="details-list-head">Period:</p>
+                    </div>
+                    <div class="details-list-right">
+                        <p class="details-list-content">06/21/2019</p>
+                        <p class="details-list-content">Windows</p>
+                        <p class="details-list-content">Unity</p>
+                        <p class="details-list-content">1</p>
+                        <p class="details-list-content">1 month</p>
+                    </div>
+                </div>
+                <p class="text">
+                    My first project as a game developer, "Balling Ball", was inspired by one of my favorite video games, "Hotline Miami".
+                <br>It won second place in one of the competitions held by my alma mater, "Vantan Game Academy High School".
+                <br>
+                <br>"Balling Ball" is a top-down action game where you move with W, S, A, and D, 
+                    and destroy all enemies with "Adrenaline" which can be activated by holding right-click.
+                <br>
+                <br>Download: <a class="link" href="https://drive.google.com/file/d/1AoR7FFhnFg-xpZIDhzGwP9KK21dp0y7N/view?usp=sharing">v1.0</a> 
+                    | <a class="link" href="https://drive.google.com/file/d/1Kyit75Nqyw5dV3_5T6bdAsztpOBIzkvP/view?usp=sharing">Source</a>
+                </p>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </main>
+</body>
+</html>

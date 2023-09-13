@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UP UP UP! - Hinata Yamamoto</title>
+    <script src="https://kit.fontawesome.com/312a3c8f98.js" crossorigin="anonymous"></script>
+    <link href="/css/stylesheet.css" rel="stylesheet"/>
+    <link href="/css/works-content.css" rel="stylesheet"/>
+    <style>
+    </style>
+
+    <script>
+        fetch("/header.html")
+            .then((response) => response.text())
+            .then((data) => document.querySelector("#header").innerHTML = data);
+
+        fetch("/footer.html")
+            .then((response) => response.text())
+            .then((data) => document.querySelector("#footer").innerHTML = data);
+    </script>
+
+    <style>
+    </style>
+</head>
+<body>
+    <div id="header"></div>
+
+    <main>
+        <h1 class="content-title">UP UP UP! (2019)</h1>
+        <iframe src="https://www.youtube.com/embed/7IOlpbYa4kA?si=_r_-SOMZ0Od0mk5V" title="YouTube video player" class="works-vid-player"
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <div class="details">
+            <h2 class="details-head">Description</h2>
+            <div class="details-contents">
+                <div class="details-list">
+                    <div class="details-list-left">
+                        <p class="details-list-head">Completion:</p>
+                        <p class="details-list-head">Platform:</p>
+                        <p class="details-list-head">Engine:</p>
+                        <p class="details-list-head">Team Size:</p>
+                        <p class="details-list-head">Period:</p>
+                    </div>
+                    <div class="details-list-right">
+                        <p class="details-list-content">10/08/2019</p>
+                        <p class="details-list-content">Windows</p>
+                        <p class="details-list-content">Unity</p>
+                        <p class="details-list-content">1</p>
+                        <p class="details-list-content">2 months</p>
+                    </div>
+                </div>
+                <p class="text">
+                    "UP UP UP!" is a casual 2D action game where you become a white ball and escape from a deep hole.
+                <br>
+                <br>This game has great potential and won first place in one of the competitions held by "Vantan Game Academy High School", from which I graduated.
+                <br>I plan to release this game on Google Play with many improvements in the future.
+                <br>
+                <br>Download: <a class="link" href="https://drive.google.com/file/d/1338hWP8nTQUe3TgFK8OKg1vgXU1iMHz4/view?usp=sharing">v1.0</a>
+                    | <a class="link" href="https://drive.google.com/file/d/11vIqqUD6iTSNePI5qD46VxBLNltb1rbx/view?usp=sharing">High Fes 2019 Edition</a>
+                    | <a class="link" href="https://drive.google.com/file/d/1Y9XI0DkzAMmk0LcgXgIwUtVUmGUOhMPA/view?usp=sharing">High Fes 2020 Edition</a>
+                    | <a class="link" href="https://drive.google.com/file/d/1pkp0_PsdBTV6auW6FxZ6Pn8KnHhCJe5G/view?usp=sharing">Source</a>
+                </p>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </main>
+</body>
+</html>

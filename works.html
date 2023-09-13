@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Works - Hinata Yamamoto</title>
+    <script src="https://kit.fontawesome.com/312a3c8f98.js" crossorigin="anonymous"></script>
+    <link href="/css/stylesheet.css" rel="stylesheet"/>
+    <style>
+    </style>
+
+    <script>
+        fetch("/header.html")
+            .then((response) => response.text())
+            .then((data) => document.querySelector("#header").innerHTML = data);
+
+        fetch("/footer.html")
+            .then((response) => response.text())
+            .then((data) => document.querySelector("#footer").innerHTML = data);
+    </script>
+
+    <style>
+
+    </style>
+</head>
+<body>
+    <div id="header"></div>
+
+    <main>
+        <h1 class="content-title">WORKS</h1>
+        <div class="works">
+            <a href="/works/bb.html" class="works-link"><img src="/images/bb.png"></a>
+            <a href="/works/up3.html" class="works-link"><img src="/images/up3.png"></a>
+            <a href="/works/do3.html" class="works-link"><img src="/images/do3.png"></a>
+            <a href="/works/robot.html" class="works-link"><img src="/images/robot.png"></a>
+            <a href="/works/bo.html" class="works-link"><img src="/images/bo.png"></a>
+            <a href="/works/l2d.html" class="works-link"><img src="/images/l2d.png"></a>
+        </div>
+        <div id="footer"></div>
+    </main>
+</body>
+</html>

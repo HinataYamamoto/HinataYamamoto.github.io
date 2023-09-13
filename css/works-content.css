@@ -1,0 +1,42 @@
+.works-vid-player{
+    aspect-ratio: 16 / 9;
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+}
+
+.details{
+    padding:16px 32px;
+    margin-bottom: 32px;
+}
+
+.details-head{
+    color:#c7dc68;
+    border-bottom:solid 1px;
+    margin-bottom:8px;
+}
+
+.details-contents, .details-list{
+    display: flex;
+}
+
+.details-list{
+    padding-right: 12px;
+    border-right: solid #89c3eb 1px;
+    height: fit-content;
+}
+
+.details-list-left{
+    color:#007199;
+}
+
+.details-list-right{
+    color:#c0c6c9;
+    text-align: right;
+    padding-left:32px;
+}
+
+.text{
+    padding-left:12px;
+    color: #e7e7eb;
+}

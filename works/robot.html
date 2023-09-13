@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ロボットに見える (Robot ni Mieru) - Hinata Yamamoto</title>
+    <script src="https://kit.fontawesome.com/312a3c8f98.js" crossorigin="anonymous"></script>
+    <link href="/css/stylesheet.css" rel="stylesheet"/>
+    <link href="/css/works-content.css" rel="stylesheet"/>
+    <style>
+    </style>
+
+    <script>
+        fetch("/header.html")
+            .then((response) => response.text())
+            .then((data) => document.querySelector("#header").innerHTML = data);
+
+        fetch("/footer.html")
+            .then((response) => response.text())
+            .then((data) => document.querySelector("#footer").innerHTML = data);
+    </script>
+
+    <style>
+    </style>
+</head>
+<body>
+    <div id="header"></div>
+
+    <main>
+        <h1 class="content-title">ロボットに見える (Robot ni Mieru) (2021)</h1>
+        <iframe src="https://www.youtube.com/embed/vwIQf5tCikI?si=rRtSQiumXcrSETGQ" title="YouTube video player" class="works-vid-player"
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <div class="details">
+            <h2 class="details-head">Description</h2>
+            <div class="details-contents">
+                <div class="details-list">
+                    <div class="details-list-left">
+                        <p class="details-list-head">Completion:</p>
+                        <p class="details-list-head">Platform:</p>
+                        <p class="details-list-head">Engine:</p>
+                        <p class="details-list-head">Team Size:</p>
+                        <p class="details-list-head">Period:</p>
+                    </div>
+                    <div class="details-list-right">
+                        <p class="details-list-content">03/10/2021</p>
+                        <p class="details-list-content">Windows</p>
+                        <p class="details-list-content">Unity</p>
+                        <p class="details-list-content">1</p>
+                        <p class="details-list-content">2 months</p>
+                    </div>
+                </div>
+                <p class="text">
+                    "ロボットに見える" is a first-person shooter game where you destroy enemies like "Hotline Miami" and complete objectives like "PAYDAY 2".
+                <br>
+                <br>I've always wanted to make a video game that can compete with "PAYDAY 2" which I played for over 2000 hours.
+                <br>To make this dream come true, I made an FPS game with all the skills I had at that time.
+                <br>This experience highlighted many of my problems, but at the same time, it gave me a lot of motivation.
+                <br>
+                <br>Download: <a class="link" href="https://drive.google.com/file/d/1m_N3SycHLrR3uCLv5layPfqlv-RVg1qx/view?usp=sharing">v1.0</a>
+                    | <a class="link" href="https://drive.google.com/file/d/1gFe3z8ATqX2VzueFlkYWWpfOyJ44XxwV/view?usp=sharing">Source</a>
+                </p>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </main>
+</body>
+</html>

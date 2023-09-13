@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOWN DOWN DOWN! - Hinata Yamamoto</title>
+    <script src="https://kit.fontawesome.com/312a3c8f98.js" crossorigin="anonymous"></script>
+    <link href="/css/stylesheet.css" rel="stylesheet"/>
+    <link href="/css/works-content.css" rel="stylesheet"/>
+    <style>
+    </style>
+
+    <script>
+        fetch("/header.html")
+            .then((response) => response.text())
+            .then((data) => document.querySelector("#header").innerHTML = data);
+
+        fetch("/footer.html")
+            .then((response) => response.text())
+            .then((data) => document.querySelector("#footer").innerHTML = data);
+    </script>
+
+    <style>
+    </style>
+</head>
+<body>
+    <div id="header"></div>
+
+    <main>
+        <h1 class="content-title">DOWN DOWN DOWN! (2020)</h1>
+        <iframe src="https://www.youtube.com/embed/f4lFrN9mGcs?si=9FCev6DaA-VqwwlV" title="YouTube video player" class="works-vid-player"
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <div class="details">
+            <h2 class="details-head">Description</h2>
+            <div class="details-contents">
+                <div class="details-list">
+                    <div class="details-list-left">
+                        <p class="details-list-head">Completion:</p>
+                        <p class="details-list-head">Platform:</p>
+                        <p class="details-list-head">Engine:</p>
+                        <p class="details-list-head">Team Size:</p>
+                        <p class="details-list-head">Period:</p>
+                    </div>
+                    <div class="details-list-right">
+                        <p class="details-list-content">02/17/2020</p>
+                        <p class="details-list-content">Windows</p>
+                        <p class="details-list-content">Unity</p>
+                        <p class="details-list-content">1</p>
+                        <p class="details-list-content">1 month</p>
+                    </div>
+                </div>
+                <p class="text">
+                    A prequel to "UP UP UP!" named "DOWN DOWN DOWN!" is a 3D action game where you become a white ball and jump into a deep hole to collect gold coins.
+                <br>This game is heavily inspired by the 3DS game "ひゅ～ストン".
+                <br>
+                <br>Due to several reasons, including the lack of three-dimensionality, this game couldn't be successful.
+                <br>I call this game "Kurorekishi".
+                <br>
+                <br>Download: <a class="link" href="https://drive.google.com/file/d/1v1pgMbnDM2FVleKHRyeWexHmgJwrKEaK/view?usp=sharing">v1.0</a>
+                    | <a class="link" href="https://drive.google.com/file/d/1mjjsVMoTSE2UmLd2BpMwc0Blu3PyxG0_/view?usp=sharing">Source</a>
+                </p>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </main>
+</body>
+</html>
