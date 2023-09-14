@@ -28,12 +28,13 @@
 
 .details-list-left{
     color:#007199;
+    width:112px;
 }
 
 .details-list-right{
     color:#c0c6c9;
     text-align: right;
-    padding-left:32px;
+    padding-left:24px;
 }
 
 .text{
